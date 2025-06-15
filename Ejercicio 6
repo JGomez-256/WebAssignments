@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>División Entera</title>
+</head>
+<body>
+
+<script>
+  // Pedir los dos números al usuario
+  let n = prompt("Introduce el primer número entero (n):");
+  let m = prompt("Introduce el segundo número entero (m):");
+
+  // Convertir a enteros
+  n = parseInt(n);
+  m = parseInt(m);
+
+  // Verificar que m no sea cero para evitar división por cero
+  if (m === 0) {
+    alert("No se puede dividir entre cero.");
+  } else {
+    // Calcular cociente y resto
+    let c = Math.floor(n / m);
+    let r = n % m;
+
+    // Mostrar el resultado
+    alert("La división resultante de dividir " + n + " entre " + m + " da un cociente " + c + " y un resto " + r);
+  }
+</script>
+
+</body>
+</html>
