@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora IMC</title>
+</head>
+<body>
+
+<script>
+  // Pedir peso en kilogramos
+  let peso = prompt("Introduce tu peso en kilogramos (kg):");
+
+  // Pedir estatura en metros
+  let estatura = prompt("Introduce tu estatura en metros (m):");
+
+  // Convertir a números decimales
+  peso = parseFloat(peso);
+  estatura = parseFloat(estatura);
+
+  // Calcular IMC: peso / (estatura^2)
+  let imc = peso / (estatura * estatura);
+
+  // Mostrar el resultado con 2 decimales
+  alert("Tu índice de masa corporal es " + imc.toFixed(2));
+</script>
+
+</body>
+</html>
