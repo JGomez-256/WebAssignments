@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hola Mundo</title>
+</head>
+<body>
+
+<script>
+  // Almacenar la cadena en una variable
+  let saludo = "¡Hola Mundo!";
+
+  // Mostrar el contenido de la variable en la consola
+  console.log(saludo);
+
+  // Mostrar en el navegador
+  document.write(saludo);
+</script>
+
+</body>
+</html>
