@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Saludo personalizado</title>
+</head>
+<body>
+
+<script>
+  // Solicitar el nombre al usuario
+  let nombre = prompt("¿Cuál es tu nombre?");
+
+  // Mostrar saludo personalizado
+  alert("¡Hola " + nombre + "!");
+</script>
+
+</body>
+</html>
