@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class DiasDelMes {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el nombre de un mes (ej. Enero): ");
+        String mes = scanner.nextLine().toLowerCase();  // Convierte a minúsculas para facilitar comparación
+
+        switch (mes) {
+            case "enero":
+            case "marzo":
+            case "mayo":
+            case "julio":
+            case "agosto":
+            case "octubre":
+            case "diciembre":
+                System.out.println("El mes de " + capitalizar(mes) + " tiene 31 días.");
+                break;
+            case "abril":
+            case "junio":
+            case "septiembre":
+            case "noviembre":
+                System.out.println("El mes de " + capitalizar(mes) + " tiene 30 días.");
+                break;
+            case "febrero":
+                System.out.println("El mes de Febrero tiene 28 días (29 en año bisiesto).");
+                break;
+            default:
+                System.out.println("Mes no válido. Intente nuevamente.");
+        }
+
+        scanner.close();
+    }
+
+    // Método para capitalizar la primera letra
+    public static String capitalizar(String texto) {
+        if (texto == null || texto.length() == 0) return texto;
+        return texto.substring(0, 1).toUpperCase() + texto.substring(1);
+    }
+}
