@@ -1,0 +1,14 @@
+# Solicita al usuario que ingrese la nota
+nota = float(input("Ingrese la nota del examen (0 a 10): "))
+
+# Verifica que la nota esté en un rango válido
+if nota < 0 or nota > 10:
+    print("Nota inválida. Debe estar entre 0 y 10.")
+else:
+    # Evaluar la nota
+    if nota > 7:
+        print("Examen aprobado.")
+    elif nota > 4:
+        print("Debe recuperar.")
+    else:
+        print("Es un aplazo.")
