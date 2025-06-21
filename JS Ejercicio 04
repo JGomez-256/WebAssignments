@@ -1,0 +1,52 @@
+import random
+
+# Opciones posibles
+opciones = ["piedra", "papel", "tijera"]
+
+# Contadores de puntajes
+puntaje_jugadora = 0
+puntaje_computadora = 0
+
+# Solicita la cantidad de rondas
+total_rondas = int(input("¿Cuántas rondas deseas jugar? "))
+
+# Bucle principal del juego
+for ronda in range(1, total_rondas + 1):
+    print(f"\nRonda: {ronda} de {total_rondas}")
+    
+    # Entrada de la jugadora
+    jugadora = input("Elige: piedra, papel o tijera: ").lower()
+    
+    while jugadora not in opciones:
+        jugadora = input("Opción inválida. Elige piedra, papel o tijera: ").lower()
+    
+    # Elección de la computadora
+    computadora = random.choice(opciones)
+
+    print(f"Jugadora: {jugadora.capitalize()}")
+    print(f"Computadora: {computadora.capitalize()}")
+
+    # Determinar ganador de la ronda
+    if jugadora == computadora:
+        print("Empate en esta ronda.")
+    elif (jugadora == "piedra" and computadora == "tijera") or \
+         (jugadora == "papel" and computadora == "piedra") or \
+         (jugadora == "tijera" and computadora == "papel"):
+        print("¡Jugadora ha ganado esta ronda!")
+        puntaje_jugadora += 1
+    else:
+        print("Computadora ha ganado esta ronda.")
+        puntaje_computadora += 1
+
+    print(f"Puntaje: {puntaje_jugadora} (Jugadora) - {puntaje_computadora} (Computadora)")
+    print(f"Rondas restantes: {total_rondas - ronda}")
+
+# Resultado final
+print("\n--- Resultado Final ---")
+print(f"Puntaje Final: {puntaje_jugadora} (Jugadora) - {puntaje_computadora} (Computadora)")
+if puntaje_jugadora > puntaje_computadora:
+    print("¡La Jugadora ha ganado el juego!")
+elif puntaje_computadora > puntaje_jugadora:
+    print("La Computadora ha ganado el juego.")
+else:
+    print("El juego ha terminado en empate.")
