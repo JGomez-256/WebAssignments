@@ -1,0 +1,20 @@
+//ejercicio#5
+
+// Solicita al usuario los valores separados por espacios
+let valores = prompt("Ingrese valores separados por espacios:");
+
+// Convierte la cadena de entrada en un array
+let lista = valores.split(" ");
+
+// Solicita el valor a buscar
+let buscar = prompt("Ingrese valor a buscar:");
+
+// Encuentra el índice del primer valor igual al buscado
+let indice = lista.indexOf(buscar);
+
+// Muestra el resultado
+if (indice !== -1) {
+  alert(El valor ${buscar} se encuentra en el índice ${indice});
+} else {
+  alert(El valor ${buscar} no se ha encontrado en la lista);
+}
