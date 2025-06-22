@@ -1,0 +1,58 @@
+//ejercicio#3
+
+// Pedir al usuario que ingrese números separados por espacios
+let entrada = prompt("Ingrese números separados por espacios:");
+
+// Convertir los valores ingresados en una lista de enteros
+let numeros = entrada.split(" ").map(Number);
+
+// Calcular la suma de los números
+let suma = numeros.reduce((acc, val) => acc + val, 0);
+
+// Mostrar el resultado
+console.log(La suma de los números ingresados es: ${suma});
+//ejercicio# 4 
+
+// Solicita al usuario los valores separados por espacios
+let valores = prompt("Ingrese valores separados por espacios:");
+
+// Convierte la cadena en un array
+let lista = valores.split(" ");
+
+// Solicita el valor a buscar
+let buscar = prompt("Ingrese valor a buscar:");
+
+// Verifica si el valor está en la lista
+if (lista.includes(buscar)) {
+  alert(El valor ${buscar} se encuentra entre los valores originales);
+} else {
+  alert(El valor ${buscar} NO se encuentra entre los valores originales);
+}
+//ejercicio#5
+
+// Solicita al usuario los valores separados por espacios
+let valores = prompt("Ingrese valores separados por espacios:");
+
+// Convierte la cadena de entrada en un array
+let lista = valores.split(" ");
+
+// Solicita el valor a buscar
+let buscar = prompt("Ingrese valor a buscar:");
+
+// Encuentra el índice del primer valor igual al buscado
+let indice = lista.indexOf(buscar);
+
+// Muestra el resultado
+if (indice !== -1) {
+  alert(El valor ${buscar} se encuentra en el índice ${indice});
+} else {
+  alert(El valor ${buscar} no se ha encontrado en la lista);
+}
+hay estan juan
+
+Tú, 2 min
+Ok ya los añado a GitHub
+
+Leybin Roney Morales Mejia, 2 min
+bueno gracias juan
+
