@@ -1,0 +1,10 @@
+// Pedir al usuario que ingrese los nombres separados por espacios
+let nombres = prompt("Ingrese nombres separados por espacios:");
+
+// Separar los nombres en una lista
+let listaNombres = nombres.split(" ");
+
+// Saludar a cada nombre individualmente
+for (let nombre of listaNombres) {
+  console.log(¡Hola ${nombre}!);
+}
