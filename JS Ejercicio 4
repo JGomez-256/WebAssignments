@@ -1,0 +1,18 @@
+//ejercicio# 4 
+
+// Solicita al usuario los valores separados por espacios
+let valores = prompt("Ingrese valores separados por espacios:");
+
+// Convierte la cadena en un array
+let lista = valores.split(" ");
+
+// Solicita el valor a buscar
+let buscar = prompt("Ingrese valor a buscar:");
+
+// Verifica si el valor está en la lista
+if (lista.includes(buscar)) {
+  alert(El valor ${buscar} se encuentra entre los valores originales);
+} else {
+  alert(El valor ${buscar} NO se encuentra entre los valores originales);
+}
+
